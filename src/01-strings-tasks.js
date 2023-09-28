@@ -18,8 +18,9 @@
  *   'aa',''    => 'aa'
  *   '',  'bb'  => 'bb'
  */
-function concatenateStrings(/* value1, value2 */) {
+function concatenateStrings(value1, value2 ) {
   throw new Error('Not implemented');
+  return value1.concat(value2)
 }
 
 
@@ -34,8 +35,11 @@ function concatenateStrings(/* value1, value2 */) {
  *   'b'     => 1
  *   ''      => 0
  */
-function getStringLength(/* value */) {
+function getStringLength(value) {
   throw new Error('Not implemented');
+  if (value = "") {
+    return 0;
+  } else return value.length
 }
 
 /**
