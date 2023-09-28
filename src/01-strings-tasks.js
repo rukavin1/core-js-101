@@ -35,10 +35,10 @@ function concatenateStrings(value1, value2) {
  *   ''      => 0
  */
 function getStringLength(value) {
-  return value.length; 
-    if (value = "") {
-    return 0;
-  }  
+  return value.length;
+  // if (value = "") {
+  // return 0;
+  // }
 }
 
 /**
@@ -55,7 +55,8 @@ function getStringLength(value) {
  *   'Chuck','Norris'  => 'Hello, Chuck Norris!'
  */
 function getStringFromTemplate(firstName, lastName) {
-    return `Hello, ${firstName}${lastName}!`
+  const hello = 'Hello';
+  return `${hello}, ${firstName} ${lastName}!`;
 }
 
 /**
@@ -69,7 +70,8 @@ function getStringFromTemplate(firstName, lastName) {
  *   'Hello, Chuck Norris!' => 'Chuck Norris'
  */
 function extractNameFromTemplate(value) {
-  return value.replace(/Hello, /g, '');
+  const hello = 'Hello';
+  return value.replace(hello, '');
 }
 
 
@@ -130,7 +132,7 @@ function repeatString(value, count) {
  *   'ABABAB','BA' => 'ABAB'
  */
 function removeFirstOccurrences(str, value) {
-  return str.replace(value, '')
+  return str.replace(value, '');
 }
 
 /**
@@ -205,8 +207,8 @@ function extractEmails(str) {
  *             '└──────────┘\n'
  *
  */
-function getRectangleString(width, height) {
-  
+function getRectangleString(/* width, height */) {
+  throw new Error('Not implemented');
 }
 
 
